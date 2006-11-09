@@ -1,0 +1,20 @@
+
+   # Tracker Digitization 
+   # (modelng of the electronics response in pixels and sistrips)
+   #
+
+   # Tracker geometry - required for Pixel and SiStrip Digitizers
+   #
+   include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
+   
+   # Pixel's digitization
+   #
+   include "SimTracker/SiPixelDigitizer/data/PixelDigi.cfi"
+
+   # SiStrip's digitization
+   #
+   include "SimTracker/SiStripDigitizer/data/SiStripDigi.cfi"
+   
+   sequence trDigi = { siPixelDigis & siStripDigis }
+   
+   
