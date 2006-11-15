@@ -1,0 +1,21 @@
+#Full Event content 
+block SimTrackerFEVT = {
+  untracked vstring outputCommands = {
+#save digis
+	"keep *_siPixelDigis_*_*",
+	"keep *_siStripDigis_*_*"
+
+  }		
+}	
+
+#RECO content
+block SimTrackerRECO = {
+  untracked vstring outputCommands = {
+  }		
+}	
+
+#AOD content
+block SimTrackerAOD = {
+  untracked vstring outputCommands = {
+  }		
+}	
