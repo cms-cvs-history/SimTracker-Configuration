@@ -2,9 +2,8 @@
 block SimTrackerFEVT = {
   untracked vstring outputCommands = {
 #save digis
-	"keep *_siPixelDigis_*_*",
-	"keep *_siStripDigis_*_*"
-
+	"keep PixelDigiSimLinkedmDetSetVector_siPixelDigis_*_*",
+	"keep StripDigiSimLinkedmDetSetVector_siStripDigis_*_*"
   }		
 }	
 
