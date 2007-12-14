@@ -1,20 +1,27 @@
 #Full Event content 
 block SimTrackerFEVT = {
   untracked vstring outputCommands = {
-	#save DigiSimLink
-	"keep PixelDigiSimLinkedmDetSetVector_siPixelDigis_*_*",
-	"keep StripDigiSimLinkedmDetSetVector_siStripDigis_*_*"
+    "save DigiSimLink
+    "keep PixelDigiSimLinkedmDetSetVector_siPixelDigis_*_*",
+    "keep StripDigiSimLinkedmDetSetVector_siStripDigis_*_*",
+
+    #save match with GenParticles 
+    "keep *_trackMCMatch_*_*"
   }		
 }	
 
 #RECO content
 block SimTrackerRECO = {
   untracked vstring outputCommands = {
+    #save match with GenParticles 
+    "keep *_trackMCMatch_*_*"
   }		
 }	
 
 #AOD content
 block SimTrackerAOD = {
   untracked vstring outputCommands = {
+    #save match with GenParticles 
+    "keep *_trackMCMatch_*_*"
   }		
 }	
