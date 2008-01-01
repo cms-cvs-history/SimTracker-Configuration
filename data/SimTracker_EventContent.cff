@@ -1,7 +1,7 @@
 #Full Event content 
 block SimTrackerFEVT = {
   untracked vstring outputCommands = {
-    "save DigiSimLink",
+#    "save DigiSimLink",
     "keep PixelDigiSimLinkedmDetSetVector_siPixelDigis_*_*",
     "keep StripDigiSimLinkedmDetSetVector_siStripDigis_*_*",
 
