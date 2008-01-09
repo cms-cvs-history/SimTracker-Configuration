@@ -15,7 +15,7 @@ block SimTrackerFEVTDIGI = {
   untracked vstring outputCommands = {
 	#save digis
 	"keep *_siPixelDigis_*_*",
-	"keep *_siStripDigis_*_*"
+	"keep *_siStripDigis_*_*",
 	
 	#save match with GenParticles 
 	"keep *_trackMCMatch_*_*"
