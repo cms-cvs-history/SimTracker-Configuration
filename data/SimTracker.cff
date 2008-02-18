@@ -3,10 +3,6 @@
    # (modelng of the electronics response in pixels and sistrips)
    #
 
-   # Tracker geometry - required for Pixel and SiStrip Digitizers
-   #
-   include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
-   
    # Pixel's digitization
    #
    include "SimTracker/SiPixelDigitizer/data/PixelDigi.cfi"
