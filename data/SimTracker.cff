@@ -1,19 +1,10 @@
-
 # Tracker Digitization 
-# (modeling of the electronics response in pixels and sistrips)
+# (modelng of the electronics response in pixels and sistrips)
 #
-
-# Tracker geometry - required for Pixel and SiStrip Digitizers
-#
-include "Geometry/TrackerGeometryBuilder/data/trackerGeometry.cfi"
 
 # Pixel's digitization
 #
 include "SimTracker/SiPixelDigitizer/data/PixelDigi.cfi"
-
-# Tracker Digitization 
-# (modeling of the electronics response in pixels and sistrips)
-#
 
 # SiStrip's digitization default in APV Mode Peak
 #
