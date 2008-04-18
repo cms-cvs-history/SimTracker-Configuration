@@ -6,7 +6,11 @@ block SimTrackerFEVT = {
 	"keep StripDigiSimLinkedmDetSetVector_siStripDigis_*_*",
 	
 	#save match with GenParticles 
-	"keep *_trackMCMatch_*_*"
+	"keep *_trackMCMatch_*_*",
+	#save match with TrackingParticles
+        "keep *_trackingParticleRecoTrackAsssociation_*_*",
+	"keep *_assoc2secStepTk_*_*",	
+	"keep *_assoc2thStepTk_*_*"
     }		
 }	
 
@@ -18,15 +22,24 @@ block SimTrackerFEVTDIGI = {
 	"keep *_siStripDigis_*_*",
 	
 	#save match with GenParticles 
-	"keep *_trackMCMatch_*_*"
+	"keep *_trackMCMatch_*_*",
+	#save match with TrackingParticles 
+        "keep *_trackingParticleRecoTrackAsssociation_*_*",
+	"keep *_assoc2secStepTk_*_*",	
+	"keep *_assoc2thStepTk_*_*"
   }		
 }	
 
 #RECO content
 block SimTrackerRECO = {
   untracked vstring outputCommands = {
-    #save match with GenParticles 
-    "keep *_trackMCMatch_*_*"
+	#save match with GenParticles 
+	"keep *_trackMCMatch_*_*",
+	#save match with TrackingParticles 
+        "keep *_trackingParticleRecoTrackAsssociation_*_*",
+	"keep *_assoc2secStepTk_*_*",	
+	"keep *_assoc2thStepTk_*_*"
+
   }		
 }	
 
