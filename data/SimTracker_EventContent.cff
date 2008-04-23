@@ -11,7 +11,11 @@ block SimTrackerFEVT = {
         "keep *_trackingParticleRecoTrackAsssociation_*_*",
 	"keep *_assoc2secStepTk_*_*",	
 	"keep *_assoc2thStepTk_*_*",
-	"keep *_assoc2GsfTracks_*_*"
+	"keep *_assoc2GsfTracks_*_*",
+        "keep *_assocOutInConversionTracks_*_*",
+        "keep *_assocInOutConversionTracks_*_*"
+ 
+
     }		
 }	
 
@@ -28,7 +32,10 @@ block SimTrackerFEVTDIGI = {
         "keep *_trackingParticleRecoTrackAsssociation_*_*",
 	"keep *_assoc2secStepTk_*_*",	
 	"keep *_assoc2thStepTk_*_*",
-	"keep *_assoc2GsfTracks_*_*"
+	"keep *_assoc2GsfTracks_*_*",
+        "keep *_assocOutInConversionTracks_*_*",
+        "keep *_assocInOutConversionTracks_*_*"
+ 
   }		
 }	
 
@@ -41,7 +48,10 @@ block SimTrackerRECO = {
         "keep *_trackingParticleRecoTrackAsssociation_*_*",
 	"keep *_assoc2secStepTk_*_*",	
 	"keep *_assoc2thStepTk_*_*",
-	"keep *_assoc2GsfTracks_*_*"
+	"keep *_assoc2GsfTracks_*_*",
+        "keep *_assocOutInConversionTracks_*_*",
+        "keep *_assocInOutConversionTracks_*_*"
+ 
 
   }		
 }	
