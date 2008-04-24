@@ -2,8 +2,8 @@
 block SimTrackerFEVT = {
   untracked vstring outputCommands = {
 	#save DigiSimLink
-	"keep PixelDigiSimLinkedmDetSetVector_siPixelDigis_*_*",
-	"keep StripDigiSimLinkedmDetSetVector_siStripDigis_*_*",
+	"keep PixelDigiSimLinkedmDetSetVector_simSiPixelDigis_*_*",
+	"keep StripDigiSimLinkedmDetSetVector_simSiStripDigis_*_*",
 	
 	#save match with GenParticles 
 	"keep *_allTrackMCMatch_*_*",
@@ -23,8 +23,8 @@ block SimTrackerFEVT = {
 block SimTrackerFEVTDIGI = {
   untracked vstring outputCommands = {
 	#save digis
-	"keep *_siPixelDigis_*_*",
-	"keep *_siStripDigis_*_*",
+	"keep *_simSiPixelDigis_*_*",
+	"keep *_simSiStripDigis_*_*",
 	
 	#save match with GenParticles 
 	"keep *_allTrackMCMatch_*_*",

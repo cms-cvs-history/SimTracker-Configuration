@@ -11,6 +11,6 @@ include "SimTracker/SiPixelDigitizer/data/PixelDigi.cfi"
 #include "SimTracker/SiStripDigitizer/data/SiStripDigi_APVModeDec.cff"
 include "SimTracker/SiStripDigitizer/data/SiStripDigi_APVModePeak.cff"
 
-sequence trDigi = { siPixelDigis & siStripDigis }
+sequence trDigi = { simSiPixelDigis & simSiStripDigis }
 
 
