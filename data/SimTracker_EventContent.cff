@@ -22,7 +22,7 @@ block SimTrackerFEVTDEBUG = {
 block SimTrackerRAW = {
   untracked vstring outputCommands = {
 	#save match with GenParticles 
-	"keep *_allTrackMCMatch_*_*",
+	"keep *_allTrackMCMatch_*_*"
     }		
 }	
 
@@ -30,7 +30,7 @@ block SimTrackerRAW = {
 block SimTrackerRECO = {
   untracked vstring outputCommands = {
 	#save match with GenParticles 
-	"keep *_allTrackMCMatch_*_*",
+	"keep *_allTrackMCMatch_*_*"
   }		
 }	
 
