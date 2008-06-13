@@ -1,26 +1,5 @@
-#Full Event content 
-block SimTrackerFEVT = {
-  untracked vstring outputCommands = {
-	#save DigiSimLink
-	"keep PixelDigiSimLinkedmDetSetVector_simSiPixelDigis_*_*",
-	"keep StripDigiSimLinkedmDetSetVector_simSiStripDigis_*_*",
-	
-	#save match with GenParticles 
-	"keep *_allTrackMCMatch_*_*",
-	#save match with TrackingParticles
-        "keep *_trackingParticleRecoTrackAsssociation_*_*",
-	"keep *_assoc2secStepTk_*_*",	
-	"keep *_assoc2thStepTk_*_*",
-	"keep *_assoc2GsfTracks_*_*",
-        "keep *_assocOutInConversionTracks_*_*",
-        "keep *_assocInOutConversionTracks_*_*"
- 
-
-    }		
-}	
-
 #Full Event content with DIGI
-block SimTrackerFEVTDIGI = {
+block SimTrackerFEVTDEBUG = {
   untracked vstring outputCommands = {
 	#save digis
 	"keep *_simSiPixelDigis_*_*",
@@ -39,20 +18,19 @@ block SimTrackerFEVTDIGI = {
   }		
 }	
 
+#RAW content 
+block SimTrackerRAW = {
+  untracked vstring outputCommands = {
+	#save match with GenParticles 
+	"keep *_allTrackMCMatch_*_*",
+    }		
+}	
+
 #RECO content
 block SimTrackerRECO = {
   untracked vstring outputCommands = {
 	#save match with GenParticles 
 	"keep *_allTrackMCMatch_*_*",
-	#save match with TrackingParticles 
-        "keep *_trackingParticleRecoTrackAsssociation_*_*",
-	"keep *_assoc2secStepTk_*_*",	
-	"keep *_assoc2thStepTk_*_*",
-	"keep *_assoc2GsfTracks_*_*",
-        "keep *_assocOutInConversionTracks_*_*",
-        "keep *_assocInOutConversionTracks_*_*"
- 
-
   }		
 }	
 
