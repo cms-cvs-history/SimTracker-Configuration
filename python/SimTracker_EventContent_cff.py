@@ -3,8 +3,10 @@ import FWCore.ParameterSet.Config as cms
 #Full Event content with DIGI
 SimTrackerFEVTDEBUG = cms.PSet(
     outputCommands = cms.untracked.vstring(
-        'keep *_mix_simSiPixelDigis*_*', 
-        'keep *_mix_simSiStripDigis*_*', 
+        'keep *_simSiPixelDigis_*_*', 
+        'keep *_simSiStripDigis_*_*', 
+        'drop *_mix_simSiPixelDigis*_*', 
+        'drop *_mix_simSiStripDigis*_*', 
         'keep *_digiSimLink_*_*', 
         'keep *_allTrackMCMatch_*_*', 
         'keep *_trackingParticleRecoTrackAsssociation_*_*', 

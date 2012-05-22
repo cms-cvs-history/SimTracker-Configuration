@@ -4,6 +4,6 @@ def customise(process):
 	# Signal in Deconvolution Mode
         for ps in process.mix.digitizers:
             if ps.accumulatorType == cms.string('SiStripDigitizer'):
-	        ps.APVpeakmode = cms.bool(Falsee)
+	        ps.APVpeakmode = cms.bool(False)
 	        return(process)
 
